@@ -1,0 +1,542 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    width:100%;
+    height:100%;
+    position:relative;
+    margin:0;
+    background-color: #FAFAFA;
+}
+.nav{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #dbdbdb;
+    height: 77px;
+    top: 0;
+    width: 100%;
+    position:fixed;
+    z-index: 10;
+    /* position:absolute;
+  border-bottom:0.5px solid lightgrey;
+  height:77px;
+  width: 100% */
+  
+}
+.inNav{
+    display: flex;
+    justify-content: space-between;
+    /* 이거 두 줄이 insideNav속 요소들을 센터로 정렬해줬다. 이것이 내가 원한것인가? 사이즈에 맞게 */
+    /* align-items: center; 필요한가?*/
+    /* 이거는 다른 화면에선 다른 값이 될 수 있으니 이따가 빼거나 바꾸거나 여쭤보고 하자! */
+    padding: 26px 20px;
+    height: 77px;
+    max-width: 975px;
+    min-width: 975px;
+    margin: 0 auto;
+    
+}
+
+.navFirstLogo {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 36px;
+}
+
+.instaMini {
+    width:24px;
+    height:24px;
+}
+.betweenLogoDivLine{
+    width:1px;
+    height:28px;
+    margin: 0 16px;
+    background-color: rgb(138, 136, 136);
+}
+
+.instaLogoString {
+    width: 103px;
+    height: 29px;
+}
+
+.searchPlusImg{
+    position:relative;
+    width: 215px;
+    height:28px;
+    /* padding:7px; */
+
+}
+.navSearch {
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background-color: #fafafa;
+    color:#999999;
+    font-size: 14px;
+   width: 215px;
+   height: 28px;
+}
+.navSearchImg {
+    width:10px;
+    position: absolute;
+    left:74px;
+    top:10px;
+
+}
+
+.navLastThreeIcon {
+    padding:0 0 0 24px;
+    width:156px;
+    height:24px;
+    display:flex;
+    justify-content: space-between;
+}
+.icon1,
+.icon2,
+.icon3 {
+    width:24px;
+}
+/* ****************************************************************** */
+.backgroundMainParent{
+  background-color: #FAFAFA;
+  width: 100%;
+  height: 100%;
+
+}
+.backgroundMain {
+    background-color: #FAFAFA;
+    margin:77px auto;
+    /* 마진 0이랑 auto 주니까 페이지 줄일때도 비율 유지 되고 가운대 유지 잘 된다. 마법의 코드 */
+    /* padding: 60px 0 0; */
+    height: 100%;
+    display:flex;
+    width:935px;
+    justify-content: space-between;
+    position:relative;
+}
+.mainSection{
+    padding-top: 60px  ;
+    width: 614px;
+    height: 100%;
+    margin-right: 28px;
+
+}
+.rightMain{
+  width: 1000px;
+  margin: 77px auto;
+  position: fixed;
+}
+.goRightside{
+    height: 100vh;
+    position: absolute;
+    right: 50px;
+    top: -20px; 
+}
+/* ***************************************************************** */
+/* 새 댓글 */
+ul{
+  list-style: none;
+  padding-left:0;
+
+}
+.divClass{
+  font-size: 14px;
+  height: 18px;
+  position:relative;
+  margin-top:4px;
+
+}
+.newCommentMustHavePadding{
+  font-weight: bold;
+  font-size: 14px;
+  margin-left:16px; 
+  height: 17px;
+  /* position: relative; */
+}
+.addClassForNewComment{
+  font-size: 14px;
+}
+
+.heartOfNewComment{
+   width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 24px;
+   bottom:4px;
+}
+.deleteClass_1{
+  position: absolute;
+  right: 40px;
+  border: 0 solid black;
+}
+/* ********************************************************* */
+.feeds_1,
+.feeds_2{
+    width: 614px;
+    margin: 0 0 60px 0;
+}
+.eachIdNameHeader,
+.eachIdNameHeader_2 {
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background-color: white;
+    padding: 16px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    /* row는 순무 프사랑 순무 이름 가로정렬 할 때 사용했다 */
+    align-items: center;
+    /* 이거는 순무 이름을 세로로 센터로 뒀다. */
+    position: relative;
+}
+.catProfilePhoto,
+.personProfilePhoto{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.headId,
+.headId_2{
+   margin: 0 0 0 10px;
+   font-weight: bold;
+}
+.headerThreeDotIcon,
+.headerThreeDotIcon_2{
+    width: 22px;
+    height: 12px;
+    position: absolute;
+    right: 20px;
+}
+
+.bigCatPhoto,
+.bigDogPhoto{
+    width: 100%;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
+.expressionButtons,
+.expressionButtons_2{
+    border: 1px solid lightgray;
+    /* padding: 0 16px; */
+    background-color: white;
+}
+.includeLikeButton,
+.includeLikeButton_2{
+  margin: 4px 0 0 0;
+  padding: 0 8px;
+  height: 40px;
+  display:flex;
+  flex-direction: row;
+  position:relative;
+}
+.feedHeart,
+.feedComment,
+.feedShare,
+.feedBookmark,
+.feedHeart_2,
+.feedComment_2,
+.feedShare_2,
+.feedBookmark_2{
+   width: 40px;
+   height: 40px;
+   padding: 8px;
+}
+
+.feedBookmark,
+.feedBookmark_2{
+    position:absolute;
+    right: 8px;
+}
+/* .feedComment {
+    width:
+
+}
+.feedShare{
+
+}
+.feedBookmark{
+
+} */
+.howManyPeopleViewParent,
+.howManyPeopleViewParent_2 {
+  padding-left: 16px;
+  padding-right: 8px;;
+}
+.howManyPeopleView,
+.howManyPeopleView_2 {
+   font-weight: bold;
+   font-size:14px;
+}
+
+.marginOfFeedMainText,
+.marginOfFeedMainText_2{
+    padding: 10px 8px 0 16px;
+}
+/* 여기까지 css _2 추가함 */
+.idNameIsBold{
+   font-weight: bold;
+   font-size: 14px;
+}
+.feedMainText{
+    font-size: 14px;
+}
+/* 나중에 font-size 묶어줘야지 */
+.tagInFeedIsBlue{
+   color: #003569;
+   font-size: 14px;;
+   margin:0;
+}
+.seeCommentButton{
+    color: #999999;
+    font-size: 14px;
+    margin: 8px 8px 8px 16px;
+}
+ 
+.commentCollection {
+    border:0 solid black;
+    width: 100%;
+}
+
+.firstComment,
+.secondComment{
+  height: 18px;
+  font-size:14px;
+  position: relative;
+}
+.idOfFirstComment,
+.idOfSecondComment{
+  font-weight: bold;
+  font-size: 14px;
+  margin-left:16px;
+}
+.heartOfFirstComment,
+.heartOfSecondComment{
+   width: 12px;
+   position: absolute;
+   right: 24px;
+   top:4px;
+   
+}
+.whenThisFeedUploded {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 8px 0 0 16px;
+    /* 여기에서 margin-bottom이 안들어가는 이유? */
+    color: #999999;
+    
+}
+.commentBox{
+margin: 8px 0 0 0;
+padding: 0 16px;
+height: 56px;
+border-top:1px solid lightgray;
+display:flex;
+align-items: center;
+/* 위에 두개 하니까 가로 형태 세로 중앙에 왔다. */
+  position: relative;
+}
+.submitForm{
+    height: 18px;
+}
+.addComment_1,
+.addComment_2{
+  height: 18px;
+  border:0 solid;
+  font-size: 14px;
+  resize: none;
+  padding: 0;
+  width: 500px;
+  /* 사이즈 조절할 수 있는거 없애기 */
+}
+.sumbitBtn{
+  color: #3897F0;
+  border: 0 solid ;
+  font-size: 14px;
+  position: absolute;
+  right:16px;
+}
+
+/* 여기부터 오른쪽 요소 시작 */
+/* .rightMain {
+    height: 100vh;
+    /* top:130px;
+    position:fixed;
+    z-index: 10;  */
+    /* padding:0 필요한가?*/
+} */
+.fixedMyProfileParent{
+   
+}
+.fixedMyProfile{
+  max-width: 293px;
+  min-width: 293px;
+  border:0 solid lightgrey;
+  padding:16px;
+  height:60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position:relative;
+  padding: 0 0 0 5px;
+  margin: 0 0 12px;
+}
+.myProfilePhoto{
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+    
+}
+.rightProfileMyId{
+    display:flex;
+    flex-direction: column;
+    /* 이거 두개 하니까 아이디랑 설명이 세로정렬되었다 */
+    margin: 0 0 0 14px;
+}
+.myId{
+  font-weight: bold;
+}
+.myOwnIntroduction{
+    font-size:12px;
+    color:#999999;
+    margin:0;
+}
+/* .seeAllStoryParent{
+
+  border: 1px solid lightgray;
+  background-color: #FFFFFF;
+  margin:4px 0 0 0;
+  max-width:293px;
+  position:relative;
+} */
+.seeAllStoryParent{
+    border: 1px solid lightgray;
+  background-color: #FFFFFF;
+  max-width:293px;
+}
+.story_see_all{
+  display:flex;
+  flex-direction: row;
+  margin:16px 0 0 0;
+  width:100%;
+  position:relative;
+  padding: 4px 16px;
+}
+.firstStory,
+.secondStory {
+  display:flex;
+  flex-direction: row;
+  padding: 8px 16px;
+}
+.firstStoryPhoto,
+.secondStoryPhoto{
+   width: 34px;
+   height: 34px;
+   border-radius: 50%
+}
+.firstStory_explain,
+.secondStory_explain{
+   margin: 0 0 0 14px;
+   display:flex;
+   flex-direction: column;
+}
+.fistStoryId,
+.secondStoryId{
+    font-weight: bold;
+}
+.whenFistStoryUploaded,
+.whenSecondStoryUploaded{
+  font-size:12px;
+    color:#999999;
+    margin:0;
+}
+
+.recommendOtherUser{
+  border: 1px solid lightgray;
+  background-color: #FFFFFF;
+  margin: 12px  0;
+  width: 293px; 
+}
+.firstLineOfSeeAllRecommendationParent{
+  background-color: #FFFFFF;
+  max-width:293px;
+}
+.firstLineOfSeeAllRecommendation{
+    display:flex;
+    flex-direction: row;
+    position:relative;
+    margin:16px 0 0 0;
+    width:100%;
+    padding: 4px 16px;
+
+}
+.nameOfUserCanSeeStory,
+.recommendationForYou {
+  color:#999999;
+  font-size:14px;
+  height: 18px;
+  display;flex;
+  align-content: center;
+  font-weight: bold;
+}
+.seeAllStory,
+.seeAllRecommendation{
+    position:absolute;
+    right: 16px;
+    font-size: 12px;
+
+} 
+.recommendUserContainer{
+    padding: 8px 0 ;
+}
+.firstRecommendUser,
+.secondRecommendUser{
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  padding: 8px 16px;
+}
+.firstRecommendUserPhoto,
+.secondRecommendUserPhoto{
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.firstRecommendUserId_Plus_explain,
+.secondRecommendUserId_Plus_explain{
+    /* 여기에 세로정렬 코드 써야함 */
+    display:flex;
+    flex-direction: column;
+    /* 이거 두개 하니까 아이디랑 설명이 세로정렬되었다 */
+    margin: 0 0 0 14px;
+
+
+}
+.firstRecommendUserId,
+.secondRecommendUserId{
+  font-weight: bold;
+}
+.explainOfFirstRecommendUser,
+.explainOfSecondRecommendUser{
+    font-size:12px;
+    color:#999999;
+    margin:0;
+}
+.btnOfFallow{
+    color: #3897F0;
+  border: 0 solid ;
+  font-size: 14px;
+  position: absolute;
+  right:16px;
+}
+.checkSomeInfoAboutInstagramParent{
+    widtH:277px;
+    margin: 0 0 16px;
+}
+.checkSomeInfoAboutInstagram,
+.belowSomeInfo{
+    font-size:11px;
+    color:#C7C7C7;
+
+}
+

@@ -1,0 +1,108 @@
+*{
+    box-sizing:border-box;
+}
+html, body{
+    background-color: #FAFAFA;
+    width:100%;
+    height:100%;
+    
+}
+body{
+    display:flex;
+    justify-content: center;
+}
+.firstImg{
+   margin:22px 0 12px 0 ;
+   
+   /* background-size: 410px 396px;
+   background-position: -97px 0; */
+}
+ 
+.firstMan{
+  border:0px;
+  width:348px;
+  height:263px;
+  display:flex;
+  flex-direction: column;
+  
+}
+
+.idBox1,
+.idBox2 {
+    padding: 9px 0 7px 8px;
+    margin:0;
+    font-size:11px;
+    width:258px;
+    height:36px;
+    border:1px solid #efefef;
+    color:black;
+    border-radius:3px;
+    background-color: #FAFAFA;
+    line-height: 18px;
+    
+    
+    /* border-radius */
+    
+    /* background-color: #fafafa; */
+}
+.idBox3{
+    width:258px;
+    height: 30px;
+    padding:0;
+    background-color: lightskyblue;
+    color:white;
+    border-radius:4px;
+
+}
+
+.imBoss{
+   position: relative;
+}
+.askPWMom{
+    display:flex;
+}
+.askPW {
+    position:absolute;
+    font-size: 12px;
+    margin-left : 117.81px;
+    margin-top: -50px;
+    text-align: center;
+    color: #003569;
+    
+}
+
+.largestBox{
+    /* display:flex;
+    align-items: center; */
+    -webkit-box-align: center;
+    text-align: center;
+    border:1px solid rgb(220, 219, 219);
+    /* margin: 0 0 10px; */
+    padding:10px 0;
+    background-color: white;
+    height:380px;
+    max-width: 350px;
+    margin-top: 50px;
+
+
+}
+
+.idBox1Mom{
+    width: 80%;
+    margin: 20px 0 0 40px;
+    padding: 3px;
+}
+.idBox2Mom{
+    width: 80%;
+    margin: 0 0 0 40px;
+    padding: 3px;
+}
+.idBox3Mom{
+    width: 80%;
+    margin: 10px 0 0 40px;
+    padding: 3px;
+}
+
+.askPWMom {
+   position: relative;
+}

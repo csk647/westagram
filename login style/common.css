@@ -1,0 +1,7 @@
+/* 공통적인 css  */
+ul{
+    list-style: none;
+    /* 점 없애기 */
+    padding-left: 0px;
+    /* 들여쓰기 없애기 */
+}
