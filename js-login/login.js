@@ -42,6 +42,10 @@ function youCanPress(){
     } else if(howLong.length ===0 && howLong2.length === 0) {
         removeColor();
         
+    } else if(howLong.length === 0 && howLong2.length !== 0){
+        removeColor();
+    } else if (howLong.length !==0 && howLong2.length ===0){
+        removeColor();
     }
 }
   
