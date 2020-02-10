@@ -51,7 +51,4 @@ function youCanPress(){
   
 
 
-function init(){
-  form.addEventListener("keyup", youCanPress);
-}
-init();
+form.addEventListener("keyup", youCanPress);

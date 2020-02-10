@@ -51,10 +51,6 @@ function pushComment_1(text){
   div.appendChild(spanId);
   div.appendChild(spanText);
   addNewCommentList_1.appendChild(div);
-  const commentObj = {
-    spanId : "sunset_aeri",
-    text: text
-  }
    comment.push(commentObj);
   delBtn.addEventListener("click", deleteComment);
   // 이거는 기존에 하던 방식으로 댓글 삭제 만드는 것
@@ -103,8 +99,6 @@ function handleSubmit_2(event) {
     addComment_2.value = "";
 }
 
-function init(){
-  submitForm_1.addEventListener("submit", handleSubmit_1);
-  submitForm_2.addEventListener("submit", handleSubmit_2)
-}
-init();
+
+submitForm_1.addEventListener("submit", handleSubmit_1);
+submitForm_2.addEventListener("submit", handleSubmit_2);
